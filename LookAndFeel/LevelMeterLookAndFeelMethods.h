@@ -99,7 +99,7 @@ juce::Rectangle<float> getMeterBounds (juce::Rectangle<float> bounds,
             return bounds.withWidth (w).withX (bounds.getX() + channel * w);
         }
     }
-    return juce::Rectangle<float> ();
+    //return juce::Rectangle<float> ();
 }
 
 /** Override this callback to define the placement of the actual meter bar. */
@@ -188,7 +188,7 @@ juce::Rectangle<float> getMeterTickmarksBounds (juce::Rectangle<float> bounds,
         return juce::Rectangle<float>(bounds.getCentreX(), top, w, bottom - top);
     }
 
-    return juce::Rectangle<float> ();
+    //return juce::Rectangle<float> ();
 }
 
 /** Override this callback to define the placement of the clip indicator light.
@@ -242,7 +242,7 @@ juce::Rectangle<float> getMeterClipIndicatorBounds (juce::Rectangle<float> bound
                                           w * 0.5f);
         }
     }
-    return juce::Rectangle<float> ();
+    //return juce::Rectangle<float> ();
 }
 
 /** Override this callback to define the placement of the max level.
